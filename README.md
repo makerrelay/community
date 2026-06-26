@@ -32,3 +32,10 @@ Choose the issue type that matches what you need:
 
 Please include public evidence when reporting listing problems. MakerRelay may update, hide, remove, or leave a listing unchanged depending on the evidence and service policies.
 
+## Pull Requests
+
+Please use issues or discussions for product feedback, bugs, listing corrections, and roadmap ideas.
+
+Pull requests are welcome only for improvements to this repository's public documentation, issue templates, or community guidelines.
+
+Do not submit MakerRelay application code changes here. Product and application code is handled in the main MakerRelay app repository.
