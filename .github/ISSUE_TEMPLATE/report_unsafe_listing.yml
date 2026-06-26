@@ -1,0 +1,38 @@
+name: Spam or unsafe listing
+description: Report spam, malware, phishing, impersonation, or misleading listings.
+title: "[Unsafe listing]: "
+labels:
+  - abuse
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include exploit details, credentials, private information, or unsafe payloads in public issues. Email support@makerrelay.com for private or sensitive reports.
+  - type: input
+    id: listing_url
+    attributes:
+      label: Listing URL
+      placeholder: https://makerrelay.com/tool/...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Report type
+      options:
+        - Spam
+        - Malware or unsafe download
+        - Phishing or impersonation
+        - Misleading description
+        - Broken or suspicious link
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Public details
+      description: Describe the issue using safe public evidence only.
+    validations:
+      required: true
+

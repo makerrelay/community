@@ -1,0 +1,29 @@
+name: Listing correction
+description: Report inaccurate metadata, broken links, or ownership concerns for a listing.
+title: "[Listing correction]: "
+labels:
+  - listing
+body:
+  - type: input
+    id: listing_url
+    attributes:
+      label: Listing URL
+      placeholder: https://makerrelay.com/tool/...
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs correction?
+      description: Describe the inaccurate metadata, broken URL, ownership concern, or factual issue.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence
+      description: Link to public evidence that helps verify the correction.
+      placeholder: Official website, repository, docs, maintainer statement, etc.
+    validations:
+      required: true
+
